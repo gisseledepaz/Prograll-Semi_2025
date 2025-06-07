@@ -1,6 +1,6 @@
 package com.example.miprimeraplicacion;
 
-
+package com.ugb.miprimeraaplicacion;
 
 public class amigos {
     String idAmigo;
@@ -11,11 +11,10 @@ public class amigos {
     String dui;
     String foto;
     String urlCompletaFotoFirestore;
-    String miToken;
-
+    String token;
 
     public amigos() {}
-    public amigos(String idAmigo, String nombre, String direccion, String telefono, String email, String dui, String foto, String urlCompletaFotoFirestore, String miToken) {
+    public amigos(String idAmigo, String nombre, String direccion, String telefono, String email, String dui, String foto, String urlCompletaFotoFirestore, String token) {
         this.idAmigo = idAmigo;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -23,7 +22,7 @@ public class amigos {
         this.email = email;
         this.dui = dui;
         this.foto = foto;
-        this.miToken = miToken;
+        this.token = token;
         this.urlCompletaFotoFirestore = urlCompletaFotoFirestore;
     }
     public String getUrlCompletaFotoFirestore() {
@@ -32,12 +31,12 @@ public class amigos {
     public void setUrlCompletaFotoFirestore(String urlCompletaFotoFirestore) {
         this.urlCompletaFotoFirestore = urlCompletaFotoFirestore;
     }
-    public String getMiToken() {
-        return miToken;
+    public String getToken() {
+        return token;
     }
 
-    public void setMiToken(String miToken) {
-        this.miToken = miToken;
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public String getIdAmigo() {
